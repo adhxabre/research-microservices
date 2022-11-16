@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+    todo-todo:
+        build: ./todos
+        command: "node index.js"
+        image: adhxabre/todo-todos
+        restart: always
+        container_name: todo_todos
+        ports:
+        - 5002:5002
+
+    # todo-users:
+    #     build: ./users
+    #     command: "go run main.go"
+    #     image: adhxabre/todo-users
+    #     restart: always
+    #     container_name: todo_users
+    #     ports:
+    #     - 5000:5000
