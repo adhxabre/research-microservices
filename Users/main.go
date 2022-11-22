@@ -14,5 +14,5 @@ func main() {
 	routes.RouteInit(r.PathPrefix("/api/v1").Subrouter())
 
 	fmt.Println("Server is Running on localhost:5000")
-	http.ListenAndServe("localhost:5000", r)
+	http.ListenAndServe(":5000", r)
 }
